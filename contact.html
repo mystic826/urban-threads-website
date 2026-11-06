@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Urban Threads — Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-body">
+<header class="site-nav">
+  <a class="nav-logo" href="index.html"><img src="images/logo.png" alt="Urban Threads"></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="featured.html">Featured</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">About Us</a>
+    <a class="selected" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="contact-page">
+  <img class="page-upper" src="images/upper.png" alt="">
+  <img class="page-bottom" src="images/bottom.png" alt="">
+
+  <div class="brush-label">CONTACT</div>
+  <h1 class="page-heading"><span>GET IN</span> <b>TOUCH</b></h1>
+  <p class="page-tagline">WE'D LOVE TO HEAR FROM YOU.</p>
+
+  <section class="contact-single">
+    <form class="contact-form-centered" onsubmit="event.preventDefault();">
+      <label for="cname">Your Name</label>
+      <input id="cname" required placeholder="Enter your name">
+
+      <label for="cemail">Your Email</label>
+      <input id="cemail" required type="email" placeholder="Enter your email">
+
+      <button class="collection-btn" type="submit">LOG IN</button>
+      <button class="collection-btn outline" type="button">SIGN UP</button>
+    </form>
+  </section>
+
+  <img class="page-footer" src="images/footer-strip.png" alt="">
+  <div class="page-footer-info">
+    <div>◉ urbanthreads.ph &nbsp; ◎ @urbanthreads.ph &nbsp; ✉ hello@urbanthreads.ph &nbsp; 📍 Calamba, Laguna, Philippines</div>
+    <div class="home-copy">© 2026 Urban Threads. All rights reserved.</div>
+  </div>
+</main>
+
+<a class="back-fixed" href="index.html">← BACK</a>
+<button class="exit-fixed" onclick="exitPage()">✕ EXIT</button>
+
+<script>
+function exitPage() {
+  window.close();
+  setTimeout(() => {
+    if (!window.closed) alert('This tab cannot be closed by the browser. You can close it normally.');
+  }, 100);
+}
+</script>
+</body>
+</html>
